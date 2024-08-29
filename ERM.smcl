@@ -1,0 +1,143 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}/Users/hoanglinh/Desktop/BABF_Level2/Semester 2/ERM/Assignment /Individual coursework/ERM.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res}23 Apr 2022, 11:56:55
+
+{com}. 
+. import excel "/Users/hoanglinh/Desktop/BABF_Level2/Semester 2/ERM/Assignment /Individual coursework/SURVEY ON STUDENTS' SATISFACTION AFTER THE INTERNSHIP UNDER THE IMPACT OF CAREER DEVELOPMENT (Câu trả lời).xlsx", sheet("C�u tr? l?i bi?u m?u 1") firstrow
+{res}
+{com}. drop Onascaleof5pleaserateI Onascaleof5pleaserateI F Onascaleof5pleaserateM H I J K
+
+. corr
+{txt}(obs=15)
+
+             {c |}   Gender      Age Intern~h career~t Intern~n
+{hline 13}{c +}{hline 45}
+      Gender {c |}{res}   1.0000
+         {txt}Age {c |}{res}        .        .
+{txt}Internship~h {c |}{res}   0.3546        .   1.0000
+{txt}careerdeve~t {c |}{res}  -0.0680        .   0.3007   1.0000
+{txt}Internship~n {c |}{res}  -0.0057        .  -0.2447  -0.0557   1.0000
+
+
+{com}. corr Gender Internshiplength careerdevelopment Internshipsatisfaction
+{txt}(obs=15)
+
+             {c |}   Gender Intern~h career~t Intern~n
+{hline 13}{c +}{hline 36}
+      Gender {c |}{res}   1.0000
+{txt}Internship~h {c |}{res}   0.3546   1.0000
+{txt}careerdeve~t {c |}{res}  -0.0680   0.3007   1.0000
+{txt}Internship~n {c |}{res}  -0.0057  -0.2447  -0.0557   1.0000
+
+
+{com}. 
+. import excel "/Users/hoanglinh/Desktop/BABF_Level2/Semester 2/ERM/Assignment /Individual coursework/SURVEY ON STUDENTS' SATISFACTION AFTER THE INTERNSHIP UNDER THE IMPACT OF CAREER DEVELOPMENT (Câu trả lời).xlsx", sheet("C�u tr? l?i bi?u m?u 1") firstrow clear
+{res}
+{com}. drop Onascaleof5pleaserateI Onascaleof5pleaserateI F Onascaleof5pleaserateM H I J K
+
+. corr
+{txt}(obs=15)
+
+             {c |}   Gender      Age Intern~h career~t Intern~n
+{hline 13}{c +}{hline 45}
+      Gender {c |}{res}   1.0000
+         {txt}Age {c |}{res}   0.5270   1.0000
+{txt}Internship~h {c |}{res}   0.3546  -0.1294   1.0000
+{txt}careerdeve~t {c |}{res}  -0.0680  -0.3227   0.3007   1.0000
+{txt}Internship~n {c |}{res}  -0.0057   0.2157  -0.2447  -0.0557   1.0000
+
+
+{com}. sum 
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 6}Gender {c |}{res}         15          .6    .5070926          0          1
+{txt}{space 9}Age {c |}{res}         15           2    .5345225          1          3
+{txt}Internship~h {c |}{res}         15    2.266667    1.032796          1          4
+{txt}careerdeve~t {c |}{res}         15          .8    .4140393          0          1
+{txt}Internship~n {c |}{res}         15    3.733333    .7078623   2.428571   4.714286
+
+{com}. reg Internshipsatisfaction Gender Age Internshiplength careerdevelopment
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}        15
+{txt}{hline 13}{c +}{hline 34}   F(4, 10)        = {res}     0.28
+{txt}       Model {c |} {res} .712992318         4  .178248079   {txt}Prob > F        ={res}    0.8825
+{txt}    Residual {c |} {res} 6.30197367        10  .630197367   {txt}R-squared       ={res}    0.1016
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}   -0.2577
+{txt}       Total {c |} {res} 7.01496599        14  .501068999   {txt}Root MSE        =   {res} .79385
+
+{txt}{hline 18}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}Internshipsatis~n{col 19}{c |}      Coef.{col 31}   Std. Err.{col 43}      t{col 51}   P>|t|{col 59}     [95% Con{col 72}f. Interval]
+{hline 18}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 11}Gender {c |}{col 19}{res}{space 2}-.0655531{col 31}{space 2} .5691969{col 42}{space 1}   -0.12{col 51}{space 3}0.911{col 59}{space 4}-1.333803{col 72}{space 3} 1.202697
+{txt}{space 14}Age {c |}{col 19}{res}{space 2} .3167702{col 31}{space 2}  .523449{col 42}{space 1}    0.61{col 51}{space 3}0.559{col 59}{space 4}-.8495469{col 72}{space 3} 1.483087
+{txt}{space 1}Internshiplength {c |}{col 19}{res}{space 2}-.1526775{col 31}{space 2} .2471727{col 42}{space 1}   -0.62{col 51}{space 3}0.551{col 59}{space 4}-.7034126{col 72}{space 3} .3980576
+{txt}careerdevelopment {c |}{col 19}{res}{space 2} .1457949{col 31}{space 2} .5633119{col 42}{space 1}    0.26{col 51}{space 3}0.801{col 59}{space 4}-1.109342{col 72}{space 3} 1.400932
+{txt}{space 12}_cons {c |}{col 19}{res}{space 2} 3.368558{col 31}{space 2} 1.275959{col 42}{space 1}    2.64{col 51}{space 3}0.025{col 59}{space 4}  .525544{col 72}{space 3} 6.211572
+{txt}{hline 18}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. edit
+
+. replace Age = 3 in 1
+{txt}(1 real change made)
+
+{com}. replace Age = 3 in 5
+{txt}(1 real change made)
+
+{com}. replace Age = 3 in 7
+{txt}(1 real change made)
+
+{com}. corr
+{txt}(obs=15)
+
+             {c |}   Gender      Age Intern~h career~t Intern~n
+{hline 13}{c +}{hline 45}
+      Gender {c |}{res}   1.0000
+         {txt}Age {c |}{res}  -0.0000   1.0000
+{txt}Internship~h {c |}{res}   0.3546   0.2362   1.0000
+{txt}careerdeve~t {c |}{res}  -0.0680  -0.0000   0.3007   1.0000
+{txt}Internship~n {c |}{res}  -0.0057  -0.3742  -0.2447  -0.0557   1.0000
+
+
+{com}. sum 
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 6}Gender {c |}{res}         15          .6    .5070926          0          1
+{txt}{space 9}Age {c |}{res}         15    2.333333      .48795          2          3
+{txt}Internship~h {c |}{res}         15    2.266667    1.032796          1          4
+{txt}careerdeve~t {c |}{res}         15          .8    .4140393          0          1
+{txt}Internship~n {c |}{res}         15    3.733333    .7078623   2.428571   4.714286
+
+{com}. reg Internshipsatisfaction Gender Age Internshiplength careerdevelopment
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}        15
+{txt}{hline 13}{c +}{hline 34}   F(4, 10)        = {res}     0.51
+{txt}       Model {c |} {res} 1.18684064         4  .296710159   {txt}Prob > F        ={res}    0.7307
+{txt}    Residual {c |} {res} 5.82812535        10  .582812535   {txt}R-squared       ={res}    0.1692
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}   -0.1631
+{txt}       Total {c |} {res} 7.01496599        14  .501068999   {txt}Root MSE        =   {res} .76342
+
+{txt}{hline 18}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}Internshipsatis~n{col 19}{c |}      Coef.{col 31}   Std. Err.{col 43}      t{col 51}   P>|t|{col 59}     [95% Con{col 72}f. Interval]
+{hline 18}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 11}Gender {c |}{col 19}{res}{space 2} .0871194{col 31}{space 2} .4414836{col 42}{space 1}    0.20{col 51}{space 3}0.848{col 59}{space 4}-.8965674{col 72}{space 3} 1.070806
+{txt}{space 14}Age {c |}{col 19}{res}{space 2}-.4774395{col 31}{space 2} .4342099{col 42}{space 1}   -1.10{col 51}{space 3}0.297{col 59}{space 4} -1.44492{col 72}{space 3} .4900405
+{txt}{space 1}Internshiplength {c |}{col 19}{res}{space 2}-.1308353{col 31}{space 2}  .234047{col 42}{space 1}   -0.56{col 51}{space 3}0.588{col 59}{space 4}-.6523245{col 72}{space 3}  .390654
+{txt}careerdevelopment {c |}{col 19}{res}{space 2} .0101483{col 31}{space 2} .5293955{col 42}{space 1}    0.02{col 51}{space 3}0.985{col 59}{space 4}-1.169418{col 72}{space 3} 1.189715
+{txt}{space 12}_cons {c |}{col 19}{res}{space 2} 5.083528{col 31}{space 2} 1.103853{col 42}{space 1}    4.61{col 51}{space 3}0.001{col 59}{space 4}  2.62399{col 72}{space 3} 7.543067
+{txt}{hline 18}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. edit
+
+. log close
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}/Users/hoanglinh/Desktop/BABF_Level2/Semester 2/ERM/Assignment /Individual coursework/ERM.smcl
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res}23 Apr 2022, 13:53:18
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}
