@@ -1,0 +1,273 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}/Users/hoanglinh/Desktop/BABF level 3/Sem 2/Project/PJ.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res}11 Mar 2023, 15:58:07
+
+{com}. sembuilder "/Users/hoanglinh/Desktop/BABF level 3/Sem 2/Project/SEM_1.stsem"
+{res}
+{com}. {res}{com}sem (habit <- _cons@0, ) (habit -> bi, ) (gender -> si, ) (age -> si, ) (education -> si, ) (income -> si, ) (bank -> bi, ) (peou -> pu, ) (peou -> ca, ) (pu -> ca, ) (td -> habit, ) (si <- _cons@0, ) (si -> td, ) (ca <- _cons@0, ) (ca -> habit, ) (pr -> ca, ) (bi <- _cons@0, ), nocapslatent
+{res}{txt}(1 observations with missing values excluded)
+
+Endogenous variables
+
+{p 0 11 2}Observed:{space 2}{res}habit bi si pu ca td{p_end}
+{txt}
+Exogenous variables
+
+{p 0 11 2}Observed:{space 2}{res}gender age education income bank peou pr{p_end}
+{txt}
+Fitting target model:
+
+Iteration 0:{space 3}log likelihood = {res:-13751.957}  
+Iteration 1:{space 3}log likelihood = {res:-8655.6799}  
+Iteration 2:{space 3}log likelihood = {res:-6657.7332}  
+Iteration 3:{space 3}log likelihood = {res:-3182.2242}  
+Iteration 4:{space 3}log likelihood = {res:-2918.7711}  
+Iteration 5:{space 3}log likelihood = {res:-2674.1628}  
+Iteration 6:{space 3}log likelihood = {res:-2624.8006}  
+Iteration 7:{space 3}log likelihood = {res:-2613.5094}  
+Iteration 8:{space 3}log likelihood = {res:-2612.9311}  
+Iteration 9:{space 3}log likelihood = {res: -2612.926}  
+Iteration 10:{space 2}log likelihood = {res: -2612.926}  
+
+Structural equation model{col 49}Number of obs{col 67}= {res}       197
+{col 1}{txt}Estimation method{col 20}= {res}ml
+{col 1}{txt}Log likelihood{col 20}= {res} -2612.926
+
+{p 0 7}{space 1}{text:( 1)}{space 1} [habit]_cons = 0{p_end}
+{p 0 7}{space 1}{text:( 2)}{space 1} [bi]_cons = 0{p_end}
+{p 0 7}{space 1}{text:( 3)}{space 1} [si]_cons = 0{p_end}
+{p 0 7}{space 1}{text:( 4)}{space 1} [ca]_cons = 0{p_end}
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 14}{c |}{col 26}      OIM
+{col 14}{c |}      Coef.{col 26}   Std. Err.{col 38}      z{col 46}   P>|z|{col 54}     [95% Con{col 67}f. Interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}{res}Structural  {col 14}{txt}{c |}
+{space 2}{col 3}habit <-  {col 14}{c |}
+{space 10}ca {c |}{col 14}{res}{space 2} .1564711{col 26}{space 2} .0521599{col 37}{space 1}    3.00{col 46}{space 3}0.003{col 54}{space 4} .0542396{col 67}{space 3} .2587025
+{txt}{space 10}td {c |}{col 14}{res}{space 2}  .131316{col 26}{space 2} .0582009{col 37}{space 1}    2.26{col 46}{space 3}0.024{col 54}{space 4} .0172444{col 67}{space 3} .2453876
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2}        0{col 26}{txt}  (constrained)
+{space 2}{hline 11}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 2}{col 3}bi <-     {col 14}{c |}
+{space 7}habit {c |}{col 14}{res}{space 2} .9477343{col 26}{space 2} .1481587{col 37}{space 1}    6.40{col 46}{space 3}0.000{col 54}{space 4} .6573487{col 67}{space 3}  1.23812
+{txt}{space 8}bank {c |}{col 14}{res}{space 2} 1.524977{col 26}{space 2} .0954644{col 37}{space 1}   15.97{col 46}{space 3}0.000{col 54}{space 4}  1.33787{col 67}{space 3} 1.712084
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2}        0{col 26}{txt}  (constrained)
+{space 2}{hline 11}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 2}{col 3}si <-     {col 14}{c |}
+{space 6}gender {c |}{col 14}{res}{space 2} .6383166{col 26}{space 2} .1053027{col 37}{space 1}    6.06{col 46}{space 3}0.000{col 54}{space 4} .4319271{col 67}{space 3} .8447061
+{txt}{space 9}age {c |}{col 14}{res}{space 2} .2559247{col 26}{space 2} .0594355{col 37}{space 1}    4.31{col 46}{space 3}0.000{col 54}{space 4} .1394333{col 67}{space 3} .3724161
+{txt}{space 3}education {c |}{col 14}{res}{space 2}  .553918{col 26}{space 2} .0900577{col 37}{space 1}    6.15{col 46}{space 3}0.000{col 54}{space 4}  .377408{col 67}{space 3} .7304279
+{txt}{space 6}income {c |}{col 14}{res}{space 2} .0538884{col 26}{space 2} .0625099{col 37}{space 1}    0.86{col 46}{space 3}0.389{col 54}{space 4}-.0686289{col 67}{space 3} .1764056
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2}        0{col 26}{txt}  (constrained)
+{space 2}{hline 11}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 2}{col 3}pu <-     {col 14}{c |}
+{space 8}peou {c |}{col 14}{res}{space 2} .6074361{col 26}{space 2} .0483319{col 37}{space 1}   12.57{col 46}{space 3}0.000{col 54}{space 4} .5127073{col 67}{space 3} .7021648
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2} 1.711206{col 26}{space 2} .2030175{col 37}{space 1}    8.43{col 46}{space 3}0.000{col 54}{space 4} 1.313299{col 67}{space 3} 2.109113
+{space 2}{txt}{hline 11}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 2}{col 3}ca <-     {col 14}{c |}
+{space 10}pu {c |}{col 14}{res}{space 2} .5793861{col 26}{space 2} .0704319{col 37}{space 1}    8.23{col 46}{space 3}0.000{col 54}{space 4} .4413421{col 67}{space 3}   .71743
+{txt}{space 8}peou {c |}{col 14}{res}{space 2}  .224964{col 26}{space 2} .0722306{col 37}{space 1}    3.11{col 46}{space 3}0.002{col 54}{space 4} .0833946{col 67}{space 3} .3665334
+{txt}{space 10}pr {c |}{col 14}{res}{space 2}  .238998{col 26}{space 2} .0463371{col 37}{space 1}    5.16{col 46}{space 3}0.000{col 54}{space 4} .1481789{col 67}{space 3}  .329817
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2}        0{col 26}{txt}  (constrained)
+{space 2}{hline 11}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 2}{col 3}td <-     {col 14}{c |}
+{space 10}si {c |}{col 14}{res}{space 2} .5676561{col 26}{space 2} .0645948{col 37}{space 1}    8.79{col 46}{space 3}0.000{col 54}{space 4} .4410525{col 67}{space 3} .6942596
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2} 1.424184{col 26}{space 2} .2605146{col 37}{space 1}    5.47{col 46}{space 3}0.000{col 54}{space 4} .9135849{col 67}{space 3} 1.934783
+{txt}{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+ var(e.habit){c |}{col 14}{res}{space 2} .2244308{col 26}{space 2} .0226133{col 54}{space 4} .1842114{col 67}{space 3} .2734313
+{txt}    var(e.bi){c |}{col 14}{res}{space 2} 1.189774{col 26}{space 2} .1198799{col 54}{space 4} .9765591{col 67}{space 3}  1.44954
+{txt}    var(e.si){c |}{col 14}{res}{space 2} .6287852{col 26}{space 2} .0633555{col 54}{space 4} .5161031{col 67}{space 3} .7660694
+{txt}    var(e.pu){c |}{col 14}{res}{space 2} .3333204{col 26}{space 2} .0335849{col 54}{space 4} .2735874{col 67}{space 3} .4060951
+{txt}    var(e.ca){c |}{col 14}{res}{space 2} .4231712{col 26}{space 2} .0426381{col 54}{space 4} .3473364{col 67}{space 3} .5155632
+{txt}    var(e.td){c |}{col 14}{res}{space 2}  .293271{col 26}{space 2} .0295496{col 54}{space 4} .2407151{col 67}{space 3} .3573016
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+LR test of model vs. saturated: chi2({res:48})  = {res:   736.49}, Prob > chi2 = {res}0.0000
+{com}. {res}{com}estat gof, stats(chi2)
+{res}
+{txt}{hline 21}{c TT}{hline 54}
+{lalign 21:Fit statistic}{c |}      Value   Description
+{hline 21}{c +}{hline 54}
+{lalign 21:Likelihood ratio}{c |}
+{ralign 20:chi2_ms({res:48})} {c |} {res}{ralign 10:   736.494}{txt}   model vs. saturated
+{ralign 20:p > chi2} {c |} {res}{ralign 10:     0.000}
+{txt}{ralign 20:chi2_bs({res:57})} {c |} {res}{ralign 10:   567.757}{txt}   baseline vs. saturated
+{ralign 20:p > chi2} {c |} {res}{ralign 10:     0.000}
+{txt}{hline 21}{c BT}{hline 54}
+
+{com}. estat teffects
+{res}
+
+{txt}Direct effects
+{res}{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 14}{c |}{col 26}      OIM
+{col 14}{c |}      Coef.{col 26}   Std. Err.{col 38}      z{col 46}   P>|z|{col 54}     [95% Con{col 67}f. Interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}{res}Structural  {col 14}{txt}{c |}
+{space 2}{col 3}habit <-  {col 14}{c |}
+{space 10}si {c |}{col 14}{res}{space 2}        0{col 26}{txt}  (no path)
+{space 10}pu {c |}{col 14}{res}{space 2}        0{col 26}{txt}  (no path)
+{space 10}ca {c |}{col 14}{res}{space 2} .1564711{col 26}{space 2} .0521599{col 37}{space 1}    3.00{col 46}{space 3}0.003{col 54}{space 4} .0542396{col 67}{space 3} .2587025
+{txt}{space 10}td {c |}{col 14}{res}{space 2}  .131316{col 26}{space 2} .0582009{col 37}{space 1}    2.26{col 46}{space 3}0.024{col 54}{space 4} .0172444{col 67}{space 3} .2453876
+{txt}{space 6}gender {c |}{col 14}{res}{space 2}        0{col 26}{txt}  (no path)
+{space 9}age {c |}{col 14}{res}{space 2}        0{col 26}{txt}  (no path)
+{space 3}education {c |}{col 14}{res}{space 2}        0{col 26}{txt}  (no path)
+{space 6}income {c |}{col 14}{res}{space 2}        0{col 26}{txt}  (no path)
+{space 8}peou {c |}{col 14}{res}{space 2}        0{col 26}{txt}  (no path)
+{space 10}pr {c |}{col 14}{res}{space 2}        0{col 26}{txt}  (no path)
+{space 2}{hline 11}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 2}{col 3}bi <-     {col 14}{c |}
+{space 7}habit {c |}{col 14}{res}{space 2} .9477343{col 26}{space 2} .1481587{col 37}{space 1}    6.40{col 46}{space 3}0.000{col 54}{space 4} .6573487{col 67}{space 3}  1.23812
+{txt}{space 10}si {c |}{col 14}{res}{space 2}        0{col 26}{txt}  (no path)
+{space 10}pu {c |}{col 14}{res}{space 2}        0{col 26}{txt}  (no path)
+{space 10}ca {c |}{col 14}{res}{space 2}        0{col 26}{txt}  (no path)
+{space 10}td {c |}{col 14}{res}{space 2}        0{col 26}{txt}  (no path)
+{space 6}gender {c |}{col 14}{res}{space 2}        0{col 26}{txt}  (no path)
+{space 9}age {c |}{col 14}{res}{space 2}        0{col 26}{txt}  (no path)
+{space 3}education {c |}{col 14}{res}{space 2}        0{col 26}{txt}  (no path)
+{space 6}income {c |}{col 14}{res}{space 2}        0{col 26}{txt}  (no path)
+{space 8}bank {c |}{col 14}{res}{space 2} 1.524977{col 26}{space 2} .0954644{col 37}{space 1}   15.97{col 46}{space 3}0.000{col 54}{space 4}  1.33787{col 67}{space 3} 1.712084
+{txt}{space 8}peou {c |}{col 14}{res}{space 2}        0{col 26}{txt}  (no path)
+{space 10}pr {c |}{col 14}{res}{space 2}        0{col 26}{txt}  (no path)
+{space 2}{hline 11}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 2}{col 3}si <-     {col 14}{c |}
+{space 6}gender {c |}{col 14}{res}{space 2} .6383166{col 26}{space 2} .1053027{col 37}{space 1}    6.06{col 46}{space 3}0.000{col 54}{space 4} .4319271{col 67}{space 3} .8447061
+{txt}{space 9}age {c |}{col 14}{res}{space 2} .2559247{col 26}{space 2} .0594355{col 37}{space 1}    4.31{col 46}{space 3}0.000{col 54}{space 4} .1394333{col 67}{space 3} .3724161
+{txt}{space 3}education {c |}{col 14}{res}{space 2}  .553918{col 26}{space 2} .0900577{col 37}{space 1}    6.15{col 46}{space 3}0.000{col 54}{space 4}  .377408{col 67}{space 3} .7304279
+{txt}{space 6}income {c |}{col 14}{res}{space 2} .0538884{col 26}{space 2} .0625099{col 37}{space 1}    0.86{col 46}{space 3}0.389{col 54}{space 4}-.0686289{col 67}{space 3} .1764056
+{space 2}{txt}{hline 11}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 2}{col 3}pu <-     {col 14}{c |}
+{space 8}peou {c |}{col 14}{res}{space 2} .6074361{col 26}{space 2} .0483319{col 37}{space 1}   12.57{col 46}{space 3}0.000{col 54}{space 4} .5127073{col 67}{space 3} .7021648
+{space 2}{txt}{hline 11}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 2}{col 3}ca <-     {col 14}{c |}
+{space 10}pu {c |}{col 14}{res}{space 2} .5793861{col 26}{space 2} .0704319{col 37}{space 1}    8.23{col 46}{space 3}0.000{col 54}{space 4} .4413421{col 67}{space 3}   .71743
+{txt}{space 8}peou {c |}{col 14}{res}{space 2}  .224964{col 26}{space 2} .0722306{col 37}{space 1}    3.11{col 46}{space 3}0.002{col 54}{space 4} .0833946{col 67}{space 3} .3665334
+{txt}{space 10}pr {c |}{col 14}{res}{space 2}  .238998{col 26}{space 2} .0463371{col 37}{space 1}    5.16{col 46}{space 3}0.000{col 54}{space 4} .1481789{col 67}{space 3}  .329817
+{space 2}{txt}{hline 11}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 2}{col 3}td <-     {col 14}{c |}
+{space 10}si {c |}{col 14}{res}{space 2} .5676561{col 26}{space 2} .0645948{col 37}{space 1}    8.79{col 46}{space 3}0.000{col 54}{space 4} .4410525{col 67}{space 3} .6942596
+{txt}{space 6}gender {c |}{col 14}{res}{space 2}        0{col 26}{txt}  (no path)
+{space 9}age {c |}{col 14}{res}{space 2}        0{col 26}{txt}  (no path)
+{space 3}education {c |}{col 14}{res}{space 2}        0{col 26}{txt}  (no path)
+{space 6}income {c |}{col 14}{res}{space 2}        0{col 26}{txt}  (no path)
+{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+
+
+Indirect effects
+{res}{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 14}{c |}{col 26}      OIM
+{col 14}{c |}      Coef.{col 26}   Std. Err.{col 38}      z{col 46}   P>|z|{col 54}     [95% Con{col 67}f. Interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}{res}Structural  {col 14}{txt}{c |}
+{space 2}{col 3}habit <-  {col 14}{c |}
+{space 10}si {c |}{col 14}{res}{space 2} .0745423{col 26}{space 2} .0084823{col 37}{space 1}    8.79{col 46}{space 3}0.000{col 54}{space 4} .0579173{col 67}{space 3} .0911674
+{txt}{space 10}pu {c |}{col 14}{res}{space 2} .0906572{col 26}{space 2} .0110205{col 37}{space 1}    8.23{col 46}{space 3}0.000{col 54}{space 4} .0690573{col 67}{space 3}  .112257
+{txt}{space 10}ca {c |}{col 14}{res}{space 2}        0{col 26}{txt}  (no path)
+{space 10}td {c |}{col 14}{res}{space 2}        0{col 26}{txt}  (no path)
+{space 6}gender {c |}{col 14}{res}{space 2} .0475816{col 26}{space 2} .0231445{col 37}{space 1}    2.06{col 46}{space 3}0.040{col 54}{space 4} .0022193{col 67}{space 3} .0929439
+{txt}{space 9}age {c |}{col 14}{res}{space 2} .0190772{col 26}{space 2} .0097894{col 37}{space 1}    1.95{col 46}{space 3}0.051{col 54}{space 4}-.0001097{col 67}{space 3} .0382641
+{txt}{space 3}education {c |}{col 14}{res}{space 2} .0412903{col 26}{space 2} .0200511{col 37}{space 1}    2.06{col 46}{space 3}0.039{col 54}{space 4} .0019909{col 67}{space 3} .0805897
+{txt}{space 6}income {c |}{col 14}{res}{space 2}  .004017{col 26}{space 2} .0050091{col 37}{space 1}    0.80{col 46}{space 3}0.423{col 54}{space 4}-.0058006{col 67}{space 3} .0138346
+{txt}{space 8}peou {c |}{col 14}{res}{space 2} .0902688{col 26}{space 2} .0310347{col 37}{space 1}    2.91{col 46}{space 3}0.004{col 54}{space 4} .0294419{col 67}{space 3} .1510956
+{txt}{space 10}pr {c |}{col 14}{res}{space 2} .0373963{col 26}{space 2} .0144212{col 37}{space 1}    2.59{col 46}{space 3}0.010{col 54}{space 4} .0091312{col 67}{space 3} .0656614
+{space 2}{txt}{hline 11}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 2}{col 3}bi <-     {col 14}{c |}
+{space 7}habit {c |}{col 14}{res}{space 2}        0{col 26}{txt}  (no path)
+{space 10}si {c |}{col 14}{res}{space 2} .0706463{col 26}{space 2}  .008039{col 37}{space 1}    8.79{col 46}{space 3}0.000{col 54}{space 4} .0548902{col 67}{space 3} .0864025
+{txt}{space 10}pu {c |}{col 14}{res}{space 2} .0859189{col 26}{space 2} .0104446{col 37}{space 1}    8.23{col 46}{space 3}0.000{col 54}{space 4} .0654479{col 67}{space 3} .1063898
+{txt}{space 10}ca {c |}{col 14}{res}{space 2}  .148293{col 26}{space 2} .0494337{col 37}{space 1}    3.00{col 46}{space 3}0.003{col 54}{space 4} .0514047{col 67}{space 3} .2451812
+{txt}{space 10}td {c |}{col 14}{res}{space 2} .1244527{col 26}{space 2} .0551589{col 37}{space 1}    2.26{col 46}{space 3}0.024{col 54}{space 4} .0163431{col 67}{space 3} .2325622
+{txt}{space 6}gender {c |}{col 14}{res}{space 2} .0450947{col 26}{space 2} .0230398{col 37}{space 1}    1.96{col 46}{space 3}0.050{col 54}{space 4}-.0000625{col 67}{space 3} .0902519
+{txt}{space 9}age {c |}{col 14}{res}{space 2} .0180801{col 26}{space 2} .0096988{col 37}{space 1}    1.86{col 46}{space 3}0.062{col 54}{space 4}-.0009291{col 67}{space 3} .0370894
+{txt}{space 3}education {c |}{col 14}{res}{space 2} .0391323{col 26}{space 2} .0199635{col 37}{space 1}    1.96{col 46}{space 3}0.050{col 54}{space 4} 4.50e-06{col 67}{space 3}   .07826
+{txt}{space 6}income {c |}{col 14}{res}{space 2}  .003807{col 26}{space 2} .0047844{col 37}{space 1}    0.80{col 46}{space 3}0.426{col 54}{space 4}-.0055703{col 67}{space 3} .0131843
+{txt}{space 8}bank {c |}{col 14}{res}{space 2}        0{col 26}{txt}  (no path)
+{space 8}peou {c |}{col 14}{res}{space 2} .0855508{col 26}{space 2} .0323105{col 37}{space 1}    2.65{col 46}{space 3}0.008{col 54}{space 4} .0222234{col 67}{space 3} .1488783
+{txt}{space 10}pr {c |}{col 14}{res}{space 2} .0354417{col 26}{space 2} .0147478{col 37}{space 1}    2.40{col 46}{space 3}0.016{col 54}{space 4} .0065365{col 67}{space 3}  .064347
+{space 2}{txt}{hline 11}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 2}{col 3}si <-     {col 14}{c |}
+{space 6}gender {c |}{col 14}{res}{space 2}        0{col 26}{txt}  (no path)
+{space 9}age {c |}{col 14}{res}{space 2}        0{col 26}{txt}  (no path)
+{space 3}education {c |}{col 14}{res}{space 2}        0{col 26}{txt}  (no path)
+{space 6}income {c |}{col 14}{res}{space 2}        0{col 26}{txt}  (no path)
+{space 2}{hline 11}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 2}{col 3}pu <-     {col 14}{c |}
+{space 8}peou {c |}{col 14}{res}{space 2}        0{col 26}{txt}  (no path)
+{space 2}{hline 11}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 2}{col 3}ca <-     {col 14}{c |}
+{space 10}pu {c |}{col 14}{res}{space 2}        0{col 26}{txt}  (no path)
+{space 8}peou {c |}{col 14}{res}{space 2}   .35194{col 26}{space 2} .0511325{col 37}{space 1}    6.88{col 46}{space 3}0.000{col 54}{space 4} .2517222{col 67}{space 3} .4521578
+{txt}{space 10}pr {c |}{col 14}{res}{space 2}        0{col 26}{txt}  (no path)
+{space 2}{hline 11}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 2}{col 3}td <-     {col 14}{c |}
+{space 10}si {c |}{col 14}{res}{space 2}        0{col 26}{txt}  (no path)
+{space 6}gender {c |}{col 14}{res}{space 2} .3623443{col 26}{space 2} .0726169{col 37}{space 1}    4.99{col 46}{space 3}0.000{col 54}{space 4} .2200178{col 67}{space 3} .5046707
+{txt}{space 9}age {c |}{col 14}{res}{space 2} .1452772{col 26}{space 2} .0375713{col 37}{space 1}    3.87{col 46}{space 3}0.000{col 54}{space 4} .0716388{col 67}{space 3} .2189156
+{txt}{space 3}education {c |}{col 14}{res}{space 2} .3144349{col 26}{space 2} .0623992{col 37}{space 1}    5.04{col 46}{space 3}0.000{col 54}{space 4} .1921346{col 67}{space 3} .4367352
+{txt}{space 6}income {c |}{col 14}{res}{space 2} .0305901{col 26}{space 2} .0356545{col 37}{space 1}    0.86{col 46}{space 3}0.391{col 54}{space 4}-.0392914{col 67}{space 3} .1004716
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+
+
+Total effects
+{res}{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 14}{c |}{col 26}      OIM
+{col 14}{c |}      Coef.{col 26}   Std. Err.{col 38}      z{col 46}   P>|z|{col 54}     [95% Con{col 67}f. Interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}{res}Structural  {col 14}{txt}{c |}
+{space 2}{col 3}habit <-  {col 14}{c |}
+{space 10}si {c |}{col 14}{res}{space 2} .0745423{col 26}{space 2} .0084823{col 37}{space 1}    8.79{col 46}{space 3}0.000{col 54}{space 4} .0579173{col 67}{space 3} .0911674
+{txt}{space 10}pu {c |}{col 14}{res}{space 2} .0906572{col 26}{space 2} .0110205{col 37}{space 1}    8.23{col 46}{space 3}0.000{col 54}{space 4} .0690573{col 67}{space 3}  .112257
+{txt}{space 10}ca {c |}{col 14}{res}{space 2} .1564711{col 26}{space 2} .0521599{col 37}{space 1}    3.00{col 46}{space 3}0.003{col 54}{space 4} .0542396{col 67}{space 3} .2587025
+{txt}{space 10}td {c |}{col 14}{res}{space 2}  .131316{col 26}{space 2} .0582009{col 37}{space 1}    2.26{col 46}{space 3}0.024{col 54}{space 4} .0172444{col 67}{space 3} .2453876
+{txt}{space 6}gender {c |}{col 14}{res}{space 2} .0475816{col 26}{space 2} .0231445{col 37}{space 1}    2.06{col 46}{space 3}0.040{col 54}{space 4} .0022193{col 67}{space 3} .0929439
+{txt}{space 9}age {c |}{col 14}{res}{space 2} .0190772{col 26}{space 2} .0097894{col 37}{space 1}    1.95{col 46}{space 3}0.051{col 54}{space 4}-.0001097{col 67}{space 3} .0382641
+{txt}{space 3}education {c |}{col 14}{res}{space 2} .0412903{col 26}{space 2} .0200511{col 37}{space 1}    2.06{col 46}{space 3}0.039{col 54}{space 4} .0019909{col 67}{space 3} .0805897
+{txt}{space 6}income {c |}{col 14}{res}{space 2}  .004017{col 26}{space 2} .0050091{col 37}{space 1}    0.80{col 46}{space 3}0.423{col 54}{space 4}-.0058006{col 67}{space 3} .0138346
+{txt}{space 8}peou {c |}{col 14}{res}{space 2} .0902688{col 26}{space 2} .0310347{col 37}{space 1}    2.91{col 46}{space 3}0.004{col 54}{space 4} .0294419{col 67}{space 3} .1510956
+{txt}{space 10}pr {c |}{col 14}{res}{space 2} .0373963{col 26}{space 2} .0144212{col 37}{space 1}    2.59{col 46}{space 3}0.010{col 54}{space 4} .0091312{col 67}{space 3} .0656614
+{space 2}{txt}{hline 11}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 2}{col 3}bi <-     {col 14}{c |}
+{space 7}habit {c |}{col 14}{res}{space 2} .9477343{col 26}{space 2} .1481587{col 37}{space 1}    6.40{col 46}{space 3}0.000{col 54}{space 4} .6573487{col 67}{space 3}  1.23812
+{txt}{space 10}si {c |}{col 14}{res}{space 2} .0706463{col 26}{space 2}  .008039{col 37}{space 1}    8.79{col 46}{space 3}0.000{col 54}{space 4} .0548902{col 67}{space 3} .0864025
+{txt}{space 10}pu {c |}{col 14}{res}{space 2} .0859189{col 26}{space 2} .0104446{col 37}{space 1}    8.23{col 46}{space 3}0.000{col 54}{space 4} .0654479{col 67}{space 3} .1063898
+{txt}{space 10}ca {c |}{col 14}{res}{space 2}  .148293{col 26}{space 2} .0494337{col 37}{space 1}    3.00{col 46}{space 3}0.003{col 54}{space 4} .0514047{col 67}{space 3} .2451812
+{txt}{space 10}td {c |}{col 14}{res}{space 2} .1244527{col 26}{space 2} .0551589{col 37}{space 1}    2.26{col 46}{space 3}0.024{col 54}{space 4} .0163431{col 67}{space 3} .2325622
+{txt}{space 6}gender {c |}{col 14}{res}{space 2} .0450947{col 26}{space 2} .0230398{col 37}{space 1}    1.96{col 46}{space 3}0.050{col 54}{space 4}-.0000625{col 67}{space 3} .0902519
+{txt}{space 9}age {c |}{col 14}{res}{space 2} .0180801{col 26}{space 2} .0096988{col 37}{space 1}    1.86{col 46}{space 3}0.062{col 54}{space 4}-.0009291{col 67}{space 3} .0370894
+{txt}{space 3}education {c |}{col 14}{res}{space 2} .0391323{col 26}{space 2} .0199635{col 37}{space 1}    1.96{col 46}{space 3}0.050{col 54}{space 4} 4.50e-06{col 67}{space 3}   .07826
+{txt}{space 6}income {c |}{col 14}{res}{space 2}  .003807{col 26}{space 2} .0047844{col 37}{space 1}    0.80{col 46}{space 3}0.426{col 54}{space 4}-.0055703{col 67}{space 3} .0131843
+{txt}{space 8}bank {c |}{col 14}{res}{space 2} 1.524977{col 26}{space 2} .0954644{col 37}{space 1}   15.97{col 46}{space 3}0.000{col 54}{space 4}  1.33787{col 67}{space 3} 1.712084
+{txt}{space 8}peou {c |}{col 14}{res}{space 2} .0855508{col 26}{space 2} .0323105{col 37}{space 1}    2.65{col 46}{space 3}0.008{col 54}{space 4} .0222234{col 67}{space 3} .1488783
+{txt}{space 10}pr {c |}{col 14}{res}{space 2} .0354417{col 26}{space 2} .0147478{col 37}{space 1}    2.40{col 46}{space 3}0.016{col 54}{space 4} .0065365{col 67}{space 3}  .064347
+{space 2}{txt}{hline 11}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 2}{col 3}si <-     {col 14}{c |}
+{space 6}gender {c |}{col 14}{res}{space 2} .6383166{col 26}{space 2} .1053027{col 37}{space 1}    6.06{col 46}{space 3}0.000{col 54}{space 4} .4319271{col 67}{space 3} .8447061
+{txt}{space 9}age {c |}{col 14}{res}{space 2} .2559247{col 26}{space 2} .0594355{col 37}{space 1}    4.31{col 46}{space 3}0.000{col 54}{space 4} .1394333{col 67}{space 3} .3724161
+{txt}{space 3}education {c |}{col 14}{res}{space 2}  .553918{col 26}{space 2} .0900577{col 37}{space 1}    6.15{col 46}{space 3}0.000{col 54}{space 4}  .377408{col 67}{space 3} .7304279
+{txt}{space 6}income {c |}{col 14}{res}{space 2} .0538884{col 26}{space 2} .0625099{col 37}{space 1}    0.86{col 46}{space 3}0.389{col 54}{space 4}-.0686289{col 67}{space 3} .1764056
+{space 2}{txt}{hline 11}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 2}{col 3}pu <-     {col 14}{c |}
+{space 8}peou {c |}{col 14}{res}{space 2} .6074361{col 26}{space 2} .0483319{col 37}{space 1}   12.57{col 46}{space 3}0.000{col 54}{space 4} .5127073{col 67}{space 3} .7021648
+{space 2}{txt}{hline 11}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 2}{col 3}ca <-     {col 14}{c |}
+{space 10}pu {c |}{col 14}{res}{space 2} .5793861{col 26}{space 2} .0704319{col 37}{space 1}    8.23{col 46}{space 3}0.000{col 54}{space 4} .4413421{col 67}{space 3}   .71743
+{txt}{space 8}peou {c |}{col 14}{res}{space 2}  .576904{col 26}{space 2} .0485331{col 37}{space 1}   11.89{col 46}{space 3}0.000{col 54}{space 4} .4817808{col 67}{space 3} .6720272
+{txt}{space 10}pr {c |}{col 14}{res}{space 2}  .238998{col 26}{space 2} .0463371{col 37}{space 1}    5.16{col 46}{space 3}0.000{col 54}{space 4} .1481789{col 67}{space 3}  .329817
+{space 2}{txt}{hline 11}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 2}{col 3}td <-     {col 14}{c |}
+{space 10}si {c |}{col 14}{res}{space 2} .5676561{col 26}{space 2} .0645948{col 37}{space 1}    8.79{col 46}{space 3}0.000{col 54}{space 4} .4410525{col 67}{space 3} .6942596
+{txt}{space 6}gender {c |}{col 14}{res}{space 2} .3623443{col 26}{space 2} .0726169{col 37}{space 1}    4.99{col 46}{space 3}0.000{col 54}{space 4} .2200178{col 67}{space 3} .5046707
+{txt}{space 9}age {c |}{col 14}{res}{space 2} .1452772{col 26}{space 2} .0375713{col 37}{space 1}    3.87{col 46}{space 3}0.000{col 54}{space 4} .0716388{col 67}{space 3} .2189156
+{txt}{space 3}education {c |}{col 14}{res}{space 2} .3144349{col 26}{space 2} .0623992{col 37}{space 1}    5.04{col 46}{space 3}0.000{col 54}{space 4} .1921346{col 67}{space 3} .4367352
+{txt}{space 6}income {c |}{col 14}{res}{space 2} .0305901{col 26}{space 2} .0356545{col 37}{space 1}    0.86{col 46}{space 3}0.391{col 54}{space 4}-.0392914{col 67}{space 3} .1004716
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+
+{com}. log close
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}/Users/hoanglinh/Desktop/BABF level 3/Sem 2/Project/PJ.smcl
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res}11 Mar 2023, 19:52:49
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}
