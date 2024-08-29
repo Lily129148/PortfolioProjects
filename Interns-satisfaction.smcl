@@ -6,7 +6,7 @@
  {txt}opened on:  {res}23 Apr 2022, 11:56:55
 
 {com}. 
-. import excel "/Users/hoanglinh/Desktop/BABF_Level2/Semester 2/ERM/Assignment /Individual coursework/SURVEY ON STUDENTS' SATISFACTION AFTER THE INTERNSHIP UNDER THE IMPACT OF CAREER DEVELOPMENT (Câu trả lời).xlsx", sheet("C�u tr? l?i bi?u m?u 1") firstrow
+. import excel "/Users/hoanglinh/Desktop/BABF_Level2/Semester 2/ERM/Assignment /Individual coursework/SURVEY ON STUDENTS' SATISFACTION AFTER THE INTERNSHIP UNDER THE IMPACT OF CAREER DEVELOPMENT (CaÌ‚u traÌ‰ loÌ›Ì€i).xlsx", sheet("Câu tr? l?i bi?u m?u 1") firstrow
 {res}
 {com}. drop Onascaleof5pleaserateI Onascaleof5pleaserateI F Onascaleof5pleaserateM H I J K
 
@@ -34,7 +34,7 @@
 
 
 {com}. 
-. import excel "/Users/hoanglinh/Desktop/BABF_Level2/Semester 2/ERM/Assignment /Individual coursework/SURVEY ON STUDENTS' SATISFACTION AFTER THE INTERNSHIP UNDER THE IMPACT OF CAREER DEVELOPMENT (Câu trả lời).xlsx", sheet("C�u tr? l?i bi?u m?u 1") firstrow clear
+. import excel "/Users/hoanglinh/Desktop/BABF_Level2/Semester 2/ERM/Assignment /Individual coursework/SURVEY ON STUDENTS' SATISFACTION AFTER THE INTERNSHIP UNDER THE IMPACT OF CAREER DEVELOPMENT (CaÌ‚u traÌ‰ loÌ›Ì€i).xlsx", sheet("Câu tr? l?i bi?u m?u 1") firstrow clear
 {res}
 {com}. drop Onascaleof5pleaserateI Onascaleof5pleaserateI F Onascaleof5pleaserateM H I J K
 
