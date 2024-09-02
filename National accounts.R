@@ -1,9 +1,3 @@
-#Explore data
-#Clean data
-#Manipulate
-#Describe data
-#Visualisation
-#Analyse data
 
 #Load library 
 library(tidyverse)
