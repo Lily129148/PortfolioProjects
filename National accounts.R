@@ -1,11 +1,15 @@
 
 #Load library 
-library(tidyverse)
 library(Hmisc)
 
 install.packages('shiny')
 library(shiny)
 library(tibble)
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+library(tidyverse)
+library(plotly)
 
 
 #Removes all the variable stores previously
