@@ -1,4 +1,4 @@
-![image](Images/Portfolio%20Projects.png)
+![image](Images/Portfolio%20Project.png)
 
 ## Introduction
 
@@ -18,13 +18,16 @@ This project was made to showcase my data analysis skills. The project consists 
 
 ## Technologies Used
 
-- SQL
-- Python
-- Tableau
-- Excel
-- R
-- Jupyter Notebook
-- Stata
+- **SQL**: Utilized for data cleaning, querying, and analysis in projects like the COVID-19 project. The projects was using MySQL. 
+![SQL](Images/SQL%20.png)
+- **Python**: Employed for data manipulation, visualization, and predictive modeling in projects such as GDP Analysis and Movie Industry Analysis. These projects was using Jupyter Notebook with necessary libraries such as Pandas, Numpy, Matplotlib, and Scikit-Learn.
+- **Jupyter Notebook**: Utilized for creating and sharing documents that contain live code, equations, visualizations, and narrative text.
+![Python](Images/Python%20Libraries.png)
+- **Tableau**: Used for creating interactive dashboards and visualizations to present data insights.
+- **R**: Used for statistical analysis and data visualization in projects like National Accounts.
+![R](Images/R.png)
+- **Stata**: Employed for data analysis, statistical modeling, and visualization in projects like Customer Behaviour and Interns Satisfaction.
+
 
 ## Contact
 
